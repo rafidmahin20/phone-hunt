@@ -28,5 +28,9 @@ const showPhoneDetails = (data) => {
 }
 
 const details = (info) => {
-    const url = `https://openapi.programming-hero.com/api/phone/`
+    const url = `https://openapi.programming-hero.com/api/phone/'${info}'`
+
+    fetch(url)
+    .then(res => res.json())
+    .then(data => console.log(data))
 }
