@@ -19,7 +19,7 @@ const showPhoneDetails = (data) => {
         <h3>Model: ${phonedata.phone_name}</h3>
         <h4>Brand: ${phonedata.brand}</h4>
         <div>
-            <button type="button" class="btn btn-success" onclick="details('hello')">Details</button>
+            <button type="button" class="btn btn-success" onclick="details()">Details</button>
         </div>
         </div>`
         parent.appendChild(div);
@@ -28,5 +28,5 @@ const showPhoneDetails = (data) => {
 }
 
 const details = (info) => {
-    console.log("clicked", info);
+    const url = `https://openapi.programming-hero.com/api/phone/`
 }
